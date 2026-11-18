@@ -1,0 +1,2 @@
+document.querySelectorAll('#year').forEach(e=>e.textContent=new Date().getFullYear());
+function sendWhatsApp(e){e.preventDefault();const n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),m=document.getElementById('message').value.trim();const text=`السلام عليكم، أنا ${n}. رقم هاتفي: ${p||'غير محدد'}.\nموضوع الاستفسار: ${m}`;window.open('https://wa.me/212661243720?text='+encodeURIComponent(text),'_blank','noopener');}
